@@ -1,0 +1,17 @@
+id: 0
+name: Mainnet deployment
+network: mainnet
+stacks-node: https://api.hiro.so
+bitcoin-node: http://blockstack:blockstacksystem@bitcoin.blockstack.com:8332
+plan:
+  batches:
+  - id: 0
+    transactions:
+    - transaction-type: contract-publish
+      contract-name: micro-polls
+      expected-sender: SP2V3QE7H5D09N108CJ4QPS281Z3XAZVD87R8FJ27
+      cost: 48040
+      path: contracts/micro-polls.clar
+      anchor-block-only: true
+      clarity-version: 5
+    epoch: '3.4'
