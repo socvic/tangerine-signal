@@ -121,7 +121,7 @@
 			(+ u1 (default-to u0 (map-get? option-tally { poll-id: poll-id, option-id: option-id })))
 		)
 		(print {
-			event: "vote-cast",
+			event: "vote-cast",  ;; on-chain event for indexers
 			poll-id: poll-id,
 			voter: tx-sender,
 			option-id: option-id,
