@@ -170,3 +170,8 @@ describe("micro-polls", () => {
         expect(open.result).toBeOk(Cl.bool(false));
     });
 });
+
+it("returns initial nonce of zero", () => {
+  const nonce = simnet.callReadOnlyFn("micro-polls", "get-poll-nonce", [], wallet1);
+  expect(nonce.result).toBeOk(Cl.uint(0));
+});
