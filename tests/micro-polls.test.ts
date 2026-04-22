@@ -225,3 +225,13 @@ it("creates a poll with 3 options", () => {
   const poll = simnet.callReadOnlyFn("micro-polls", "get-poll", [Cl.uint(1)], wallet1);
   expect(poll.result).toBeOk(Cl.some(Cl.tuple({ creator: Cl.principal(wallet1), question: Cl.stringUtf8("Three options?"), "option-count": Cl.uint(3), "start-height": Cl.uint(2), "end-height": Cl.uint(52), "is-open": Cl.bool(true) })));
 });
+
+it("accepts duration at max boundary of 1008", () => {
+  const created = simnet.callPublicFn(
+    "micro-polls",
+    "create-poll",
+    [Cl.stringUtf8("Max duration?"), Cl.stringUtf8("Yes"), Cl.stringUtf8("No"), Cl.none(), Cl.none(), Cl.uint(1008)],
+    wallet1,
+  );
+  expect(created.result).toBeOk(Cl.uint(1));
+});
