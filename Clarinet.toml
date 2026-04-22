@@ -1,6 +1,6 @@
 [project]
 name = "micro-polls-voting-board"
-description = ""
+description = "Lightweight on-chain polling on Stacks"
 authors = []
 telemetry = false
 cache_dir = "./.cache"
