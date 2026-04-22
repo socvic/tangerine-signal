@@ -3,3 +3,4 @@ vitest.config.ts linguist-vendored
 * text=lf
 *.clar linguist-language=Clarity
 *.tsx linguist-language=TypeScript
+tsconfig*.json linguist-vendored
