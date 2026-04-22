@@ -3,7 +3,7 @@
 ;; === Constants ===
 ;; Lightweight on-chain polling with one vote per principal.
 
-(define-constant MIN-DURATION u10)
+(define-constant MIN-DURATION u10)  ;; ~1.5 hours at 10min/block
 (define-constant MAX-DURATION u1008)
 
 (define-constant ERR-BAD-DURATION (err u100))
