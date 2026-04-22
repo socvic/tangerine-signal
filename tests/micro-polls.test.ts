@@ -235,3 +235,13 @@ it("accepts duration at max boundary of 1008", () => {
   );
   expect(created.result).toBeOk(Cl.uint(1));
 });
+
+it("accepts duration at min boundary of 10", () => {
+  const created = simnet.callPublicFn(
+    "micro-polls",
+    "create-poll",
+    [Cl.stringUtf8("Min duration?"), Cl.stringUtf8("Yes"), Cl.stringUtf8("No"), Cl.none(), Cl.none(), Cl.uint(10)],
+    wallet1,
+  );
+  expect(created.result).toBeOk(Cl.uint(1));
+});
