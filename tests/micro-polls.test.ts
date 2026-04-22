@@ -202,3 +202,14 @@ it("get-tally starts at zero before any votes", () => {
   const tally = simnet.callReadOnlyFn("micro-polls", "get-tally", [Cl.uint(1), Cl.uint(1)], wallet1);
   expect(tally.result).toBeOk(Cl.uint(0));
 });
+
+it("has-voted returns false before voting", () => {
+  simnet.callPublicFn(
+    "micro-polls",
+    "create-poll",
+    [Cl.stringUtf8("Vote check?"), Cl.stringUtf8("X"), Cl.stringUtf8("Y"), Cl.none(), Cl.none(), Cl.uint(40)],
+    wallet1,
+  );
+  const voted = simnet.callReadOnlyFn("micro-polls", "has-voted", [Cl.uint(1), Cl.principal(wallet2)], wallet1);
+  expect(voted.result).toBeOk(Cl.bool(false));
+});
