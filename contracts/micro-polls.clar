@@ -6,7 +6,7 @@
 (define-constant MIN-DURATION u10)  ;; ~1.5 hours at 10min/block
 (define-constant MAX-DURATION u1008)  ;; ~7 days at 10min/block
 
-(define-constant ERR-BAD-DURATION (err u100))
+(define-constant ERR-BAD-DURATION (err u100))  ;; duration outside 10-1008
 (define-constant ERR-BAD-OPTION (err u101))
 (define-constant ERR-ALREADY-VOTED (err u102))
 (define-constant ERR-POLL-CLOSED (err u103))
