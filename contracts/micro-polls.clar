@@ -4,7 +4,7 @@
 ;; Lightweight on-chain polling with one vote per principal.
 
 (define-constant MIN-DURATION u10)  ;; ~1.5 hours at 10min/block
-(define-constant MAX-DURATION u1008)
+(define-constant MAX-DURATION u1008)  ;; ~7 days at 10min/block
 
 (define-constant ERR-BAD-DURATION (err u100))
 (define-constant ERR-BAD-OPTION (err u101))
