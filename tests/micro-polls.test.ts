@@ -175,3 +175,8 @@ it("returns initial nonce of zero", () => {
   const nonce = simnet.callReadOnlyFn("micro-polls", "get-poll-nonce", [], wallet1);
   expect(nonce.result).toBeOk(Cl.uint(0));
 });
+
+it("is-poll-open returns error for missing poll", () => {
+  const result = simnet.callReadOnlyFn("micro-polls", "is-poll-open", [Cl.uint(999)], wallet1);
+  expect(result.result).toBeErr(Cl.uint(104));
+});
