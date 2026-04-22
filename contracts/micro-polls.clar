@@ -14,6 +14,8 @@
 
 (define-data-var poll-nonce uint u0)
 
+;; === Data Storage ===
+
 (define-map polls
 	uint
 	{
