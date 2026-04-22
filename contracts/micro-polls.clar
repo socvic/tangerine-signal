@@ -201,3 +201,4 @@
 	(and (get is-open poll) (<= height (get end-height poll)))
 )
 
+
