@@ -52,6 +52,7 @@
 	uint
 )
 
+;; === Public Functions ===
 (define-public
 	(create-poll
 		(question (string-utf8 140))
