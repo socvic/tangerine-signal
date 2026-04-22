@@ -3,7 +3,7 @@ name = "micro-polls-voting-board"
 description = "Lightweight on-chain polling on Stacks"
 authors = []
 telemetry = false
-cache_dir = "./.cache"
+cache_dir = "./.cache"  # local clarinet cache
 
 # [contracts.counter]
 # path = "contracts/counter.clar"
