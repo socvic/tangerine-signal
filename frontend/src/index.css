@@ -1,4 +1,4 @@
-:root {
+:root {  /* Global design tokens */
   font-family: "IBM Plex Sans", "Segoe UI", sans-serif;
   color: #10263d;
   background: radial-gradient(circle at top left, #fff6e6 0%, #f6fbff 36%, #eef4fb 100%);
