@@ -180,3 +180,14 @@ it("is-poll-open returns error for missing poll", () => {
   const result = simnet.callReadOnlyFn("micro-polls", "is-poll-open", [Cl.uint(999)], wallet1);
   expect(result.result).toBeErr(Cl.uint(104));
 });
+
+it("get-option returns the stored option text", () => {
+  simnet.callPublicFn(
+    "micro-polls",
+    "create-poll",
+    [Cl.stringUtf8("Favorite color?"), Cl.stringUtf8("Red"), Cl.stringUtf8("Blue"), Cl.none(), Cl.none(), Cl.uint(50)],
+    wallet1,
+  );
+  const opt = simnet.callReadOnlyFn("micro-polls", "get-option", [Cl.uint(1), Cl.uint(1)], wallet1);
+  expect(opt.result).toBeOk(Cl.some(Cl.stringUtf8("Red")));
+});
