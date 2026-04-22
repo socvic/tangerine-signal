@@ -6,6 +6,7 @@ const accounts = simnet.getAccounts();
 const wallet1 = accounts.get("wallet_1")!;
 const wallet2 = accounts.get("wallet_2")!;
 
+
 describe("micro-polls", () => {
     it("creates a poll with 4 options and stores metadata", () => {
         const created = simnet.callPublicFn(
