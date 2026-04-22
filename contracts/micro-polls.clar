@@ -97,7 +97,7 @@
 				false
 			)
 			(print {
-				event: "poll-created",
+				event: "poll-created",  ;; on-chain event for indexers
 				poll-id: next-id,
 				creator: tx-sender,
 				option-count: option-count,
