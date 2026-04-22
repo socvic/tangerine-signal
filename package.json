@@ -1,7 +1,9 @@
 {
   "name": "tangerine-signal-tests",
   "version": "1.0.0",
+  "bugs": "https://github.com/mainnetforker/tangerine-signal/issues",
   "version": "1.0.0",
+  "bugs": "https://github.com/mainnetforker/tangerine-signal/issues",
   "description": "Run unit tests on this project.",
   "type": "module",
   "private": true,
