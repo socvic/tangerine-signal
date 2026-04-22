@@ -3,8 +3,8 @@ import { Cl, cvToHex, cvToJSON, hexToCV, type ClarityValue } from '@stacks/trans
 import { useCallback, useEffect, useMemo, useState } from 'react'
 import './App.css'
 
-const CONTRACT_ADDRESS = import.meta.env.VITE_CONTRACT_ADDRESS || 'SP000000000000000000002Q6VF78'
-const CONTRACT_NAME = import.meta.env.VITE_CONTRACT_NAME || 'replace-after-deploy'
+const CONTRACT_ADDRESS = import.meta.env.VITE_CONTRACT_ADDRESS || 'SP2V3QE7H5D09N108CJ4QPS281Z3XAZVD87R8FJ27'
+const CONTRACT_NAME = import.meta.env.VITE_CONTRACT_NAME || 'micro-polls'
 const STACKS_API_BASE = import.meta.env.VITE_STACKS_API_BASE || 'https://api.hiro.so'
 const NETWORK = (import.meta.env.VITE_STACKS_NETWORK || 'mainnet') as 'mainnet' | 'testnet'
 
@@ -575,3 +575,4 @@ function App() {
 }
 
 export default App
+
