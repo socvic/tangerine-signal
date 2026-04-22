@@ -1,5 +1,4 @@
 # Commit trail
-
 - 000 bootstrap
 - 001 synthetic history
 - 002 synthetic history
@@ -20,3 +19,33 @@
 - 017 synthetic history
 - 018 synthetic history
 - 019 synthetic history
+- 020 add project description and package metadata
+- 021 add contributing guide and license
+- 022 add editorconfig and vscode config
+- 023 expand gitignore and gitattributes
+- 024 add trailing newlines across config files
+- 025 add clarinet config documentation
+- 026 document tsconfig strict mode
+- 027 add contract file header and section markers
+- 028 document all contract error codes
+- 029 document contract constants with approx durations
+- 030 annotate print events for indexers
+- 031 add trailing newline to contract
+- 032 add test file header and blank lines
+- 033 add get-poll-nonce initial state test
+- 034 add is-poll-open missing poll test
+- 035 add get-option read-only verification test
+- 036 add get-tally initial zero state test
+- 037 add has-voted false initial state test
+- 038 add poll creation with 3 options test
+- 039 add max duration boundary test
+- 040 add min duration boundary test
+- 041 add duration above max rejection test
+- 042 add frontend package metadata
+- 043 add prettier dev dependency
+- 044 update page title and meta tags
+- 045 add html dir attribute
+- 046 add trailing newlines to frontend configs
+- 047 add css file headers and comments
+- 048 add trailing newlines to frontend sources
+- 049 update commit trail log
