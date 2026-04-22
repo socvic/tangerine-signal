@@ -1,0 +1,6 @@
+{
+  "recommendations": [
+    "hirosystems.clarity-lsp",
+    "dbaeumer.vscode-eslint"
+  ]
+}
