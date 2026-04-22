@@ -191,3 +191,14 @@ it("get-option returns the stored option text", () => {
   const opt = simnet.callReadOnlyFn("micro-polls", "get-option", [Cl.uint(1), Cl.uint(1)], wallet1);
   expect(opt.result).toBeOk(Cl.some(Cl.stringUtf8("Red")));
 });
+
+it("get-tally starts at zero before any votes", () => {
+  simnet.callPublicFn(
+    "micro-polls",
+    "create-poll",
+    [Cl.stringUtf8("Tally check?"), Cl.stringUtf8("A"), Cl.stringUtf8("B"), Cl.none(), Cl.none(), Cl.uint(30)],
+    wallet1,
+  );
+  const tally = simnet.callReadOnlyFn("micro-polls", "get-tally", [Cl.uint(1), Cl.uint(1)], wallet1);
+  expect(tally.result).toBeOk(Cl.uint(0));
+});
