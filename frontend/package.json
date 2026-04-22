@@ -1,6 +1,7 @@
 {
   "name": "frontend",
   "private": true,
+  "description": "Micro Polls Voting Board frontend",
   "version": "0.0.0",
   "type": "module",
   "scripts": {
