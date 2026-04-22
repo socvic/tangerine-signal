@@ -1,6 +1,7 @@
 {
   "name": "tangerine-signal-tests",
   "version": "1.0.0",
+  "version": "1.0.0",
   "description": "Run unit tests on this project.",
   "type": "module",
   "private": true,
