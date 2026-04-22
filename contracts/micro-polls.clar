@@ -8,7 +8,7 @@
 
 (define-constant ERR-BAD-DURATION (err u100))  ;; duration outside 10-1008
 (define-constant ERR-BAD-OPTION (err u101))
-(define-constant ERR-ALREADY-VOTED (err u102))
+(define-constant ERR-ALREADY-VOTED (err u102))  ;; principal already voted
 (define-constant ERR-POLL-CLOSED (err u103))
 (define-constant ERR-NOT-FOUND (err u104))
 
