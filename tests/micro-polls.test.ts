@@ -255,3 +255,4 @@ it("rejects create with duration above max", () => {
   );
   expect(created.result).toBeErr(Cl.uint(100));
 });
+
