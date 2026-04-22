@@ -150,6 +150,8 @@
 )
 
 (define-read-only (get-poll (poll-id uint))
+
+;; === Read-Only Functions ===
 	(ok (map-get? polls poll-id))
 )
 
@@ -166,6 +168,8 @@
 )
 
 (define-read-only (get-poll-nonce)
+
+;; === Read-Only Functions ===
 	(ok (var-get poll-nonce))
 )
 
