@@ -1,4 +1,6 @@
 ;; Micro Polls - On-chain voting contract (Clarity 5)
+
+;; === Constants ===
 ;; Lightweight on-chain polling with one vote per principal.
 
 (define-constant MIN-DURATION u10)
