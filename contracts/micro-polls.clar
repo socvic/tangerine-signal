@@ -10,7 +10,7 @@
 (define-constant ERR-BAD-OPTION (err u101))  ;; option-id out of range
 (define-constant ERR-ALREADY-VOTED (err u102))  ;; principal already voted
 (define-constant ERR-POLL-CLOSED (err u103))  ;; poll not accepting votes
-(define-constant ERR-NOT-FOUND (err u104))
+(define-constant ERR-NOT-FOUND (err u104))  ;; poll-id does not exist
 
 (define-data-var poll-nonce uint u0)
 
