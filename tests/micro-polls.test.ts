@@ -213,3 +213,15 @@ it("has-voted returns false before voting", () => {
   const voted = simnet.callReadOnlyFn("micro-polls", "has-voted", [Cl.uint(1), Cl.principal(wallet2)], wallet1);
   expect(voted.result).toBeOk(Cl.bool(false));
 });
+
+it("creates a poll with 3 options", () => {
+  const created = simnet.callPublicFn(
+    "micro-polls",
+    "create-poll",
+    [Cl.stringUtf8("Three options?"), Cl.stringUtf8("A"), Cl.stringUtf8("B"), Cl.some(Cl.stringUtf8("C")), Cl.none(), Cl.uint(50)],
+    wallet1,
+  );
+  expect(created.result).toBeOk(Cl.uint(1));
+  const poll = simnet.callReadOnlyFn("micro-polls", "get-poll", [Cl.uint(1)], wallet1);
+  expect(poll.result).toBeOk(Cl.some(Cl.tuple({ creator: Cl.principal(wallet1), question: Cl.stringUtf8("Three options?"), "option-count": Cl.uint(3), "start-height": Cl.uint(2), "end-height": Cl.uint(52), "is-open": Cl.bool(true) })));
+});
