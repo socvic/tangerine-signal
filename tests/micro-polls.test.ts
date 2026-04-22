@@ -245,3 +245,13 @@ it("accepts duration at min boundary of 10", () => {
   );
   expect(created.result).toBeOk(Cl.uint(1));
 });
+
+it("rejects create with duration above max", () => {
+  const created = simnet.callPublicFn(
+    "micro-polls",
+    "create-poll",
+    [Cl.stringUtf8("Over max?"), Cl.stringUtf8("A"), Cl.stringUtf8("B"), Cl.none(), Cl.none(), Cl.uint(1009)],
+    wallet1,
+  );
+  expect(created.result).toBeErr(Cl.uint(100));
+});
