@@ -181,6 +181,8 @@
 )
 
 (define-private (optionals-count (opt3 (optional (string-utf8 40))) (opt4 (optional (string-utf8 40))))
+
+;; === Private Helpers ===
 	(+ (if (is-some opt3) u1 u0) (if (is-some opt4) u1 u0))
 )
 
