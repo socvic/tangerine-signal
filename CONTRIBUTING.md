@@ -37,3 +37,11 @@ Examples of behavior that contributes to creating a positive environment include
 - **Documentation**: Improve or add documentation
 - **Testing**: Add or improve test coverage
 - **Design**: Improve UI/UX
+
+## Code Style
+
+- Use TypeScript for all new code
+- Follow ESLint configuration
+- Write descriptive commit messages
+- Add JSDoc comments for public functions
+- Keep functions small and focused
