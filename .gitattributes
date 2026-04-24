@@ -1,6 +1,13 @@
-tests/** linguist-vendored
-vitest.config.ts linguist-vendored
-* text=lf
+# Auto detect text files and perform LF normalization
+* text=auto
+
+# Clarity files
 *.clar linguist-language=Clarity
+
+# TypeScript files
+*.ts linguist-language=TypeScript
 *.tsx linguist-language=TypeScript
-tsconfig*.json linguist-vendored
+
+# Mark generated files
+frontend/dist/ linguist-generated
+node_modules/ linguist-generated
