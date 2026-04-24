@@ -55,3 +55,13 @@ Set these in `frontend/.env`:
 - `VITE_STACKS_API_BASE` - Stacks API base URL
 - `VITE_CONTRACT_ADDRESS` - deployed contract address
 - `VITE_CONTRACT_NAME` - deployed contract name
+
+## Documentation
+
+Full documentation is available in the `docs/` directory:
+
+- [Development Guide](docs/guides/development.md)
+- [Architecture Overview](docs/guides/architecture.md)
+- [API Reference](docs/api/contract.md)
+- [FAQ](docs/faq.md)
+- [Roadmap](docs/roadmap.md)
