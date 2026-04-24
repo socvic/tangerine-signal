@@ -1,5 +1,6 @@
 {
-  "files.eol": "\n",
   "editor.formatOnSave": true,
-  "editor.defaultFormatter": null
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "clarity.formatting.enabled": true,
+  "typescript.tsdk": "node_modules/typescript/lib"
 }
