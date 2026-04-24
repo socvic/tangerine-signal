@@ -20,3 +20,11 @@ Examples of behavior that contributes to creating a positive environment include
 - Being respectful of differing viewpoints
 - Gracefully accepting constructive criticism
 - Focusing on what is best for the community
+
+## Pull Request Process
+
+1. Update documentation for any new features
+2. Add tests for new functionality
+3. Ensure all tests pass before submitting
+4. Request at least one review
+5. Address all review comments before merge
