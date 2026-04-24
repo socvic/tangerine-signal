@@ -28,3 +28,12 @@ Examples of behavior that contributes to creating a positive environment include
 3. Ensure all tests pass before submitting
 4. Request at least one review
 5. Address all review comments before merge
+
+## Types of Contributions
+
+- **Bug Reports**: Submit issues with reproduction steps
+- **Feature Requests**: Describe the problem and proposed solution
+- **Code**: Fix bugs or implement features
+- **Documentation**: Improve or add documentation
+- **Testing**: Add or improve test coverage
+- **Design**: Improve UI/UX
